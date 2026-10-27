@@ -1,7 +1,69 @@
-venv/
-.venv/
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Secrets
 .env
+.env.*
+!.env.example
+
+# Django database
 db.sqlite3
+db.sqlite3-journal
+local_settings.py
+*.log
+
+# Uploaded media
 media/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Testing
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+.spyderproject/
+.spyproject/
+
+# Windows and macOS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tempCodeRunnerFile.py
+*.tmp
+*.bak
