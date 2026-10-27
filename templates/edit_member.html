@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Edit Family Member
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="card p-5 shadow">
+
+        <h2 class="mb-4">
+            Edit Family Member
+        </h2>
+
+
+        <form method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Name
+                </label>
+
+                <input
+                type="text"
+                name="name"
+                class="form-control"
+                value="{{ member.name }}"
+                required>
+
+            </div>
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Relation
+                </label>
+
+                <input
+                type="text"
+                name="relation"
+                class="form-control"
+                value="{{ member.relation }}"
+                required>
+
+            </div>
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Change Image
+                </label>
+
+                <input
+                type="file"
+                name="image"
+                class="form-control">
+
+            </div>
+
+
+
+            <button class="btn btn-pink">
+
+                Update Member
+
+            </button>
+
+
+            <a href="{% url 'dashboard' %}"
+               class="btn btn-secondary">
+
+                Cancel
+
+            </a>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

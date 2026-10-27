@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Family Drama
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+
+    <!-- Background Image -->
+
+    <img src="{% static 'images/family.png' %}"
+         class="hero-bg">
+
+
+
+    <!-- Dark Overlay -->
+
+    <div class="hero-overlay"></div>
+
+
+
+    <!-- Content -->
+
+    <div class="container hero-content">
+
+
+        <h1 class="hero-title">
+
+            Real Stories.<br>
+            Real Families.<br>
+            <span>Real Drama.</span>
+
+        </h1>
+
+
+
+        <p class="hero-text">
+
+            Explore heart-touching family stories,
+            share your own experiences and connect
+            with people who understand relationships.
+
+        </p>
+
+
+
+        <div class="mt-4">
+
+
+            <a href="#"
+               class="btn btn-pink btn-lg me-3">
+
+                Explore Stories
+
+            </a>
+
+
+
+            <a href="#"
+               class="btn btn-outline-light btn-lg">
+
+                Share Your Story
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- FEATURED STORIES SECTION -->
+
+
+<section class="stories-section">
+
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+
+            Featured Stories
+
+        </h2>
+
+
+
+        <div class="row g-4">
+
+
+
+            <div class="col-lg-4">
+
+
+                <div class="story-card">
+
+
+                    <img src="{% static 'images/story1.jpg' %}">
+
+
+                    <div class="card-content">
+
+
+                        <h4>
+                            Family Memories
+                        </h4>
+
+
+                        <p>
+                            Beautiful moments that stay forever.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-lg-4">
+
+
+                <div class="story-card">
+
+
+                    <img src="{% static 'images/story2.jpg' %}">
+
+
+                    <div class="card-content">
+
+
+                        <h4>
+                            Old Generation
+                        </h4>
+
+
+                        <p>
+                            Stories from grandparents.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-lg-4">
+
+
+                <div class="story-card">
+
+
+                    <img src="{% static 'images/story3.jpg' %}">
+
+
+                    <div class="card-content">
+
+
+                        <h4>
+                            New Journey
+                        </h4>
+
+
+                        <p>
+                            Modern family stories.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+{% endblock %}

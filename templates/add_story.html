@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Add Story
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="container mt-5">
+
+
+    <div class="card p-5 shadow">
+
+
+        <h2 class="mb-4">
+            Add Family Story
+        </h2>
+
+
+
+        <form method="POST" enctype="multipart/form-data">
+
+
+            {% csrf_token %}
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Story Title
+                </label>
+
+
+                <input
+                type="text"
+                name="title"
+                class="form-control"
+                placeholder="Enter story title"
+                required>
+
+            </div>
+
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Description
+                </label>
+
+
+                <textarea
+                name="description"
+                class="form-control"
+                rows="5"
+                placeholder="Write your family story..."
+                required></textarea>
+
+
+            </div>
+
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Story Image
+                </label>
+
+
+                <input
+                type="file"
+                name="image"
+                class="form-control">
+
+            </div>
+
+
+
+
+            <button class="btn btn-pink">
+
+                Save Story
+
+            </button>
+
+
+
+            <a href="{% url 'dashboard' %}"
+               class="btn btn-secondary">
+
+                Cancel
+
+            </a>
+
+
+
+        </form>
+
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
